@@ -1,5 +1,5 @@
-# システムアーキテクチャ
+# Draw.io
 
-## ネットワーク構成図
+## サンプル
 
-![ネットワーク構成図](images/network-diagram.svg)
+![サンプル](images/network-diagram.svg)
