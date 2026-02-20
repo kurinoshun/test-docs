@@ -9,11 +9,9 @@ nav:
   - 開発ガイド:
       - はじめに: docs/development/intro.md
       - コーディング規約: docs/development/coding_standards.md
-      - デプロイ手順: docs/development/deployment.md
-  - APIリファレンス: docs/api_reference.md
-  - FAQ: docs/faq.md
-  - チーム紹介: docs/team.md
-  - 更新履歴: docs/changelog.md
+  - draw.io: drawio.md
+  - Mermaid: mermaid.md
+  - 更新履歴: changelog.md
 markdown_extensions:
   - toc:
       permalink: true
@@ -22,3 +20,6 @@ markdown_extensions:
   - footnotes
   - pymdownx.superfences
   - pymdownx.tabbed
+plugins:
+  - search
+  - mermaid2
