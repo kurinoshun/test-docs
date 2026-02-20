@@ -10,7 +10,7 @@
       
       
       
-        <link rel="next" href="drawio/">
+        <link rel="next" href="contributing/">
       
       
         
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ホーム
+              Welcome to MkDocs
             
           </span>
         </div>
@@ -234,7 +234,7 @@
   <span class="md-ellipsis">
     
   
-    ホーム
+    Welcome to MkDocs
   
 
     
@@ -252,7 +252,7 @@
   <span class="md-ellipsis">
     
   
-    ホーム
+    Welcome to MkDocs
   
 
     
@@ -302,62 +302,15 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    開発ガイド
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    開発ガイド
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="docs/development/intro.md" class="md-nav__link">
+      <a href="contributing/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    はじめに
+    ドキュメント投稿ガイド
   
 
     
@@ -366,42 +319,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="docs/development/coding_standards.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    コーディング規約
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -420,7 +337,7 @@
   <span class="md-ellipsis">
     
   
-    draw.io
+    Draw.io
   
 
     
@@ -447,7 +364,7 @@
   <span class="md-ellipsis">
     
   
-    Mermaid
+    Mermaidダイアグラム
   
 
     
@@ -466,15 +383,62 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="changelog.md" class="md-nav__link">
+      <a href="development/coding_standards/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    更新履歴
+    コーディング規約
   
 
     
@@ -483,6 +447,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="development/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MkDocs 導入・設定手順（GitHub Pages 公開）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -553,174 +553,6 @@
 <li><code>mkdocs build</code> - Build the documentation site.</li>
 <li><code>mkdocs -h</code> - Print help message and exit.</li>
 </ul>
-<h1 id="mkdocs-github-pages">MkDocs 導入・設定手順（GitHub Pages 公開）<a class="headerlink" href="#mkdocs-github-pages" title="Permanent link">&para;</a></h1>
-<p>本ドキュメントは、社内開発ドキュメントを <strong>MkDocs + GitHub Pages</strong> で管理・公開するための初期導入から公開までの手順をまとめたものです。</p>
-<hr />
-<h2 id="_1">📋 対象環境<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Windows 10 / 11</li>
-<li>WSL（Ubuntu）</li>
-<li>GitHub（Public / Private どちらも可）</li>
-</ul>
-<hr />
-<h2 id="1">🏗️ 1. 全体構成<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>開発者PC（Windows + WSL）
-└ MkDocs（pipx）
-    ↓
-GitHub Repository
-├ main ブランチ（Markdown管理）
-└ gh-pages ブランチ（静的HTML）
-    ↓
-GitHub Pages（公開サイト）
-</code></pre></div>
-<hr />
-<h2 id="2">✅ 2. 前提条件<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>GitHub アカウント</li>
-<li>Git が利用できること</li>
-<li>WSL（Ubuntu）が利用できること</li>
-</ul>
-<h3 id="python-wsl">Python バージョン確認（WSL）<a class="headerlink" href="#python-wsl" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version
-</code></pre></div>
-<p><strong>推奨</strong>: Python 3.8 以上</p>
-<hr />
-<h2 id="3-pipx">📦 3. pipx のインストール（推奨）<a class="headerlink" href="#3-pipx" title="Permanent link">&para;</a></h2>
-<p>MkDocs は CLI ツールのため、<code>pipx</code> を使用してインストールします。</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>pipx
-pipx<span class="w"> </span>ensurepath
-</code></pre></div>
-<blockquote>
-<p><strong>注意</strong>: インストール後、ターミナルを再起動してください。</p>
-</blockquote>
-<hr />
-<h2 id="4-mkdocs">🚀 4. MkDocs のインストール<a class="headerlink" href="#4-mkdocs" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>pipx<span class="w"> </span>install<span class="w"> </span>mkdocs
-pipx<span class="w"> </span>inject<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
-</code></pre></div>
-<h3 id="_2">確認<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>--version
-</code></pre></div>
-<hr />
-<h2 id="5-mkdocs">📁 5. MkDocs プロジェクト作成<a class="headerlink" href="#5-mkdocs" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>new<span class="w"> </span>test-docs
-<span class="nb">cd</span><span class="w"> </span>test-docs
-</code></pre></div>
-<h3 id="_3">生成される構成<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>test-docs/
-├── docs/
-│   └── index.md
-├── mkdocs.yml
-└── README.md
-</code></pre></div>
-<hr />
-<h2 id="6-material">⚙️ 6. 基本設定（日本語 + Material テーマ）<a class="headerlink" href="#6-material" title="Permanent link">&para;</a></h2>
-<p><code>mkdocs.yml</code> を以下のように設定します。</p>
-<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">社内開発ドキュメント</span>
-
-<span class="nt">theme</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
-<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ja</span>
-
-<span class="nt">nav</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ホーム</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
-</code></pre></div>
-<hr />
-<h2 id="7">🖥️ 7. ローカル確認<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
-</code></pre></div>
-<h3 id="_4">ブラウザで確認<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>http://localhost:8000
-</code></pre></div>
-<hr />
-<h2 id="8-github">🐙 8. GitHub リポジトリ作成<a class="headerlink" href="#8-github" title="Permanent link">&para;</a></h2>
-<ol>
-<li>GitHub にログイン</li>
-<li>新規リポジトリ作成</li>
-<li><strong>Repository name</strong>: <code>test-docs</code></li>
-<li><strong>README</strong>: 作成しない</li>
-<li><strong>Public / Private</strong>: 用途に応じて選択</li>
-</ol>
-<hr />
-<h2 id="9-github-push">📤 9. GitHub へ push<a class="headerlink" href="#9-github-push" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>init
-git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;init mkdocs project&quot;</span>
-git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
-git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/&lt;user&gt;/test-docs.git
-git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
-</code></pre></div>
-<blockquote>
-<p><strong>注意</strong>: <code>&lt;user&gt;</code> は自分の GitHub ユーザー名に置き換えてください。</p>
-</blockquote>
-<hr />
-<h2 id="10-github-pages">🌐 10. GitHub Pages 公開（初回）<a class="headerlink" href="#10-github-pages" title="Permanent link">&para;</a></h2>
-<h3 id="personal-access-tokenpat">Personal Access Token（PAT）を使用<a class="headerlink" href="#personal-access-tokenpat" title="Permanent link">&para;</a></h3>
-<ol>
-<li>GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)</li>
-<li><strong>Generate new token</strong></li>
-<li>設定項目：</li>
-<li><strong>Repository access</strong>: Only select repositories</li>
-<li><strong>Permissions</strong>:<ul>
-<li><strong>Contents</strong>: Read and write</li>
-</ul>
-</li>
-</ol>
-<h3 id="_5">デプロイ実行<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
-</code></pre></div>
-<h3 id="_6">成功すると<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>gh-pages</code> ブランチが作成される</li>
-<li>GitHub Pages が自動的に有効化される</li>
-</ul>
-<h3 id="url">公開 URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>https://&lt;user&gt;.github.io/test-docs/
-</code></pre></div>
-<hr />
-<h2 id="11">📝 11. 日常運用フロー<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
-<h3 id="_7">ドキュメント編集<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># docs/ 配下の .md ファイルを編集</span>
-vim<span class="w"> </span>docs/index.md
-</code></pre></div>
-<h3 id="_8">ローカル確認<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
-</code></pre></div>
-<h3 id="github">GitHub へ反映<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;update documentation&quot;</span>
-git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
-</code></pre></div>
-<h3 id="github-pages">GitHub Pages へデプロイ<a class="headerlink" href="#github-pages" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
-</code></pre></div>
-<hr />
-<h2 id="_9">🛠️ トラブルシューティング<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<h3 id="mkdocs"><code>mkdocs</code> コマンドが見つからない<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>pipx<span class="w"> </span>ensurepath
-<span class="c1"># ターミナル再起動</span>
-</code></pre></div>
-<h3 id="_10">デプロイ時に認証エラー<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Personal Access Token（PAT）の権限を確認</li>
-<li><code>git remote -v</code> で URL を確認（HTTPS / SSH）</li>
-</ul>
-<h3 id="github-pages_1">GitHub Pages が表示されない<a class="headerlink" href="#github-pages_1" title="Permanent link">&para;</a></h3>
-<ol>
-<li>リポジトリ Settings → Pages</li>
-<li>Source が <code>gh-pages</code> ブランチになっているか確認</li>
-</ol>
-<hr />
-<h2 id="_11">📚 参考リンク<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://www.mkdocs.org/">MkDocs 公式ドキュメント</a></li>
-<li><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></li>
-<li><a href="https://docs.github.com/ja/pages">GitHub Pages ドキュメント</a></li>
-</ul>
-<hr />
-<p><strong>作成日</strong>: 2026-02-10<br />
-<strong>更新日</strong>: 2026-02-10</p>
 
 
 

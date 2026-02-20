@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../drawio/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../development/coding_standards/">
+        <link rel="next" href="../drawio/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Mermaidダイアグラム - Test Docs</title>
+        <title>ドキュメント投稿ガイド - Test Docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mermaid" class="md-skip">
+        <a href="#_1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Mermaidダイアグラム
+              ドキュメント投稿ガイド
             
           </span>
         </div>
@@ -244,10 +244,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../contributing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ドキュメント投稿ガイド
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -263,6 +290,248 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全体フロー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 初回セットアップ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 初回セットアップ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リポジトリのクローン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MkDocs のインストール（ローカル確認する場合）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. ブランチの作成
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ドキュメントの追加・編集
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ドキュメントの追加・編集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フォルダ構成のルール
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ファイルの追加
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ファイルの先頭に H1 見出しを書く
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. ローカルで確認（任意）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-commit-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. commit &amp; push
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. commit &amp; push">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コミットメッセージの規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Pull Request の作成
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. デプロイ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        よくある質問
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よくある質問">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mkdocs.yml を毎回編集する必要がありますか？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サイドバーの表示順を変えたい場合は？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        画像を使いたい場合は？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -298,37 +567,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mermaidダイアグラム
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mermaid/" class="md-nav__link">
         
   
   
@@ -344,136 +586,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        フローチャート
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        シーケンス図
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ガントチャート
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        クラス図
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        状態図
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#er" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ER図
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        パイチャート
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ビットマップガントチャート
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        マインドマップ
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        利点
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -615,21 +727,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        フローチャート
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        シーケンス図
+        全体フロー
       
     </span>
   </a>
@@ -637,10 +738,49 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 初回セットアップ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 初回セットアップ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ガントチャート
+        リポジトリのクローン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MkDocs のインストール（ローカル確認する場合）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. ブランチの作成
       
     </span>
   </a>
@@ -648,32 +788,60 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ドキュメントの追加・編集
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ドキュメントの追加・編集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        クラス図
+        フォルダ構成のルール
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        状態図
+        ファイルの追加
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#er" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#h1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ER図
+        ファイルの先頭に H1 見出しを書く
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. ローカルで確認（任意）
       
     </span>
   </a>
@@ -681,10 +849,49 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#5-commit-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. commit &amp; push
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. commit &amp; push">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        パイチャート
+        コミットメッセージの規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Pull Request の作成
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. デプロイ
       
     </span>
   </a>
@@ -695,32 +902,49 @@
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ビットマップガントチャート
+        よくある質問
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よくある質問">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mkdocs.yml を毎回編集する必要がありますか？
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        マインドマップ
+        サイドバーの表示順を変えたい場合は？
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        利点
+        画像を使いたい場合は？
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -744,187 +968,140 @@
   
 
 
-<h1 id="mermaid">Mermaidダイアグラム<a class="headerlink" href="#mermaid" title="Permanent link">&para;</a></h1>
-<p>MkDocsのMermaidプラグインを使用して、様々な図表を作成できます。
-以下は代表的な例です。</p>
-<h2 id="_1">フローチャート<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>システムの処理フロー:</p>
-<pre class="mermaid"><code>flowchart TD
-    A[開始] --&gt; B{ユーザー認証}
-    B --&gt;|成功| C[ダッシュボード表示]
-    B --&gt;|失敗| D[エラー表示]
-    C --&gt; E{データ取得}
-    E --&gt;|成功| F[データ表示]
-    E --&gt;|失敗| G[キャッシュから表示]
-    D --&gt; H[終了]
-    F --&gt; H
-    G --&gt; H</code></pre>
-<h2 id="_2">シーケンス図<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>ユーザーとシステムの相互作用:</p>
-<pre class="mermaid"><code>sequenceDiagram
-    participant ユーザー
-    participant Web
-    participant API
-    participant DB
-
-    ユーザー-&gt;&gt;Web: ページアクセス
-    Web-&gt;&gt;API: データ要求
-    API-&gt;&gt;DB: クエリ実行
-    DB--&gt;&gt;API: 結果返却
-    API--&gt;&gt;Web: JSON返却
-    Web--&gt;&gt;ユーザー: ページ表示</code></pre>
-<h2 id="_3">ガントチャート<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>プロジェクトスケジュール:</p>
-<pre class="mermaid"><code>gantt
-    title プロジェクト計画
-    dateFormat YYYY-MM-DD
-
-    section 設計
-    要件定義           :des1, 2024-01-01, 30d
-    基本設計           :des2, after des1, 30d
-
-    section 開発
-    バックエンド開発   :dev1, 2024-02-01, 60d
-    フロントエンド開発 :dev2, 2024-02-15, 50d
-
-    section テスト
-    ユニットテスト     :test1, after dev1, 30d
-    統合テスト         :test2, after test1, 20d
-
-    section リリース
-    リリース準備       :rel1, after test2, 10d
-    本番リリース       :rel2, after rel1, 5d</code></pre>
-<h2 id="_4">クラス図<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>オブジェクト指向設計:</p>
-<pre class="mermaid"><code>classDiagram
-    class User {
-        -id: int
-        -name: string
-        -email: string
-        +getId() int
-        +getName() string
-    }
-
-    class Post {
-        -id: int
-        -title: string
-        -content: string
-        -authorId: int
-        +getTitle() string
-        +getAuthor() User
-    }
-
-    class Comment {
-        -id: int
-        -text: string
-        -postId: int
-        +getText() string
-    }
-
-    User "1" --&gt; "*" Post: 作成
-    Post "1" --&gt; "*" Comment: 含む</code></pre>
-<h2 id="_5">状態図<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>アプリケーションの状態遷移:</p>
-<pre class="mermaid"><code>stateDiagram-v2
-    [*] --&gt; Idle
-
-    Idle --&gt; Loading: ユーザー操作
-    Loading --&gt; Success: データ取得完了
-    Loading --&gt; Error: エラー発生
-
-    Success --&gt; Processing: 処理開始
-    Processing --&gt; Idle: 処理完了
-
-    Error --&gt; Retry: リトライ
-    Retry --&gt; Loading
-
-    Idle --&gt; [*]: 終了</code></pre>
-<h2 id="er">ER図<a class="headerlink" href="#er" title="Permanent link">&para;</a></h2>
-<p>データベース設計:</p>
-<pre class="mermaid"><code>erDiagram
-    USERS ||--o{ POSTS : creates
-    USERS ||--o{ COMMENTS : writes
-    POSTS ||--o{ COMMENTS : has
-
-    USERS {
-        int id PK
-        string name
-        string email UK
-        datetime created_at
-    }
-
-    POSTS {
-        int id PK
-        int user_id FK
-        string title
-        string content
-        datetime created_at
-    }
-
-    COMMENTS {
-        int id PK
-        int post_id FK
-        int user_id FK
-        string text
-        datetime created_at
-    }</code></pre>
-<h2 id="_6">パイチャート<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>機能別の開発時間配分:</p>
-<pre class="mermaid"><code>pie title 開発時間配分
-    "API開発" : 35
-    "フロントエンド" : 30
-    "テスト" : 20
-    "ドキュメント" : 10
-    "その他" : 5</code></pre>
-<h2 id="_7">ビットマップガントチャート<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p>複数プロジェクトの管理:</p>
-<pre class="mermaid"><code>gitGraph
-    commit id: "初回提交"
-    commit id: "機能A実装"
-
-    branch feature/user-auth
-    checkout feature/user-auth
-    commit id: "認証機能1"
-    commit id: "認証機能2"
-
-    checkout main
-    commit id: "バージョンアップ"
-
-    merge feature/user-auth
-    commit id: "テスト完了"</code></pre>
-<h2 id="_8">マインドマップ<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<p>プロジェクト計画の俯瞰:</p>
-<pre class="mermaid"><code>mindmap
-  root((Webアプリ開発))
-    設計
-      要件分析
-      アーキテクチャ設計
-      DB設計
-    開発
-      バックエンド
-        API
-        DB
-      フロントエンド
-        UI
-        状態管理
-    品質
-      ユニットテスト
-      統合テスト
-      パフォーマンステスト
-    運用
-      ドキュメント作成
-      本番デプロイ
-      監視設定</code></pre>
-<h2 id="_9">利点<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<p>Mermaidプラグインを使用することで：</p>
+<h1 id="_1">ドキュメント投稿ガイド<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>このガイドでは、チームでドキュメントを管理・追加するための手順を説明します。</p>
+<hr />
+<h2 id="_2">全体フロー<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>1. リポジトリをクローン（初回のみ）
+        ↓
+2. ブランチを作成
+        ↓
+3. docs/ 配下に .md ファイルを追加・編集
+        ↓
+4. ローカルで確認（任意）
+        ↓
+5. commit &amp; push
+        ↓
+6. Pull Request を作成 → レビュー → マージ
+        ↓
+7. デプロイ（gh-deploy）
+</code></pre></div>
+<hr />
+<h2 id="1">1. 初回セットアップ<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="_3">リポジトリのクローン<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/kurinoshun/test-docs.git
+<span class="nb">cd</span><span class="w"> </span>test-docs
+</code></pre></div>
+<h3 id="mkdocs">MkDocs のインストール（ローカル確認する場合）<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pipx<span class="w"> </span>install<span class="w"> </span>mkdocs
+pipx<span class="w"> </span>inject<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
+</code></pre></div>
+<hr />
+<h2 id="2">2. ブランチの作成<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>直接 <code>main</code> ブランチには commit せず、作業ブランチを作成してください。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>docs/your-topic
+</code></pre></div>
+<p>ブランチ名の例:</p>
 <ul>
-<li><strong>コード化</strong>: 図表をマークダウンで管理できます</li>
-<li><strong>バージョン管理</strong>: Gitで変更履歴を追跡できます</li>
-<li><strong>保守性</strong>: 図表の修正が容易です</li>
-<li><strong>一貫性</strong>: スタイルが統一されます</li>
-<li><strong>共有性</strong>: ドキュメントに直接埋め込めます</li>
+<li><code>docs/api-reference</code></li>
+<li><code>docs/onboarding</code></li>
+<li><code>docs/fix-typo</code></li>
 </ul>
-<p>詳細は<a href="https://mermaid.js.org/">Mermaid公式サイト</a>を参照してください。</p>
+<hr />
+<h2 id="3">3. ドキュメントの追加・編集<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">フォルダ構成のルール<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><code>docs/</code> 配下にトピックごとにフォルダを作成してください。
+フォルダ名・ファイル名は<strong>英語・小文字・ハイフン区切り</strong>にしてください（URLに使われるため）。</p>
+<div class="highlight"><pre><span></span><code>docs/
+├── index.md               # トップページ
+├── contributing.md        # このファイル
+├── development/           # 開発関連
+│   ├── intro.md
+│   └── coding_standards.md
+├── design/                # 設計関連（例）
+│   └── architecture.md
+└── api/                   # API関連（例）
+    └── reference.md
+</code></pre></div>
+<h3 id="_5">ファイルの追加<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># フォルダがなければ作成</span>
+mkdir<span class="w"> </span>docs/design
+
+<span class="c1"># ファイルを作成</span>
+touch<span class="w"> </span>docs/design/architecture.md
+</code></pre></div>
+<h3 id="h1">ファイルの先頭に H1 見出しを書く<a class="headerlink" href="#h1" title="Permanent link">&para;</a></h3>
+<p>MkDocs はファイルの <code># 見出し</code>（H1）をページタイトルとして使用します。</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># アーキテクチャ概要</span>
+
+ここに内容を書く。
+</code></pre></div>
+<blockquote>
+<p><strong>注意</strong>: ファイルを追加するだけでサイドバーに自動反映されます。<code>mkdocs.yml</code> の編集は不要です。</p>
+</blockquote>
+<hr />
+<h2 id="4">4. ローカルで確認（任意）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+<p>ブラウザで <code>http://localhost:8000</code> を開いて表示を確認します。
+ファイルを保存するたびにホットリロードされます。</p>
+<hr />
+<h2 id="5-commit-push">5. commit &amp; push<a class="headerlink" href="#5-commit-push" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>docs/design/architecture.md
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: アーキテクチャ概要を追加&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>docs/your-topic
+</code></pre></div>
+<h3 id="_6">コミットメッセージの規則<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>プレフィックス</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs:</code></td>
+<td>ドキュメントの追加・更新</td>
+</tr>
+<tr>
+<td><code>fix:</code></td>
+<td>誤字・リンク修正</td>
+</tr>
+<tr>
+<td><code>chore:</code></td>
+<td>設定ファイルの変更</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-pull-request">6. Pull Request の作成<a class="headerlink" href="#6-pull-request" title="Permanent link">&para;</a></h2>
+<ol>
+<li>GitHub のリポジトリページを開く</li>
+<li><code>Compare &amp; pull request</code> をクリック</li>
+<li>変更内容を説明して PR を作成</li>
+<li>レビュアーをアサイン → レビュー・承認後にマージ</li>
+</ol>
+<hr />
+<h2 id="7">7. デプロイ<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<p><code>main</code> ブランチにマージされたら、デプロイを実行します。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>main
+git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
+<p>公開 URL:</p>
+<div class="highlight"><pre><span></span><code>https://kurinoshun.github.io/test-docs/
+</code></pre></div>
+<hr />
+<h2 id="_7">よくある質問<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="mkdocsyml">mkdocs.yml を毎回編集する必要がありますか？<a class="headerlink" href="#mkdocsyml" title="Permanent link">&para;</a></h3>
+<p>不要です。<code>docs/</code> 配下にファイルを追加するだけで自動的にサイドバーに表示されます。</p>
+<h3 id="_8">サイドバーの表示順を変えたい場合は？<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p><code>mkdocs.yml</code> に <code>nav</code> セクションを追加することで順序や表示名を制御できます。通常は不要です。</p>
+<h3 id="_9">画像を使いたい場合は？<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><code>docs/images/</code> フォルダに画像を配置して参照してください。</p>
+<div class="highlight"><pre><span></span><code>![<span class="nt">説明</span>](<span class="na">../images/example.png</span>)
+</code></pre></div>
 
 
 
